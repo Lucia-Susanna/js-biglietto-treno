@@ -15,6 +15,7 @@ if (etaViaggiatore<18){
   let prezzoScontato = (prezzoIntero - scontoMinorenni * prezzoIntero).toFixed(2);
     console.log('Prezzo scontato:', `${prezzoScontato} €`);
 } else if (etaViaggiatore>=65){
-  let prezzoScontato = prezzoIntero - scontoSenior * prezzoIntero;
+  let prezzoScontato = (prezzoIntero - scontoSenior * prezzoIntero).toFixed(2);
   console.log('Prezzo scontato:', `${prezzoScontato} €`);
 }
+
